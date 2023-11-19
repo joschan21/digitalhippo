@@ -2,7 +2,7 @@
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
-![Project Image](https://github.com/joschan21/digitalhippo/blob/master/public/thumbnail.png)
+![Project Image](https://github.com/joschan21/digitalhippo/blob/master/public/thumbnail.jpg)
 
 ## Features
 
@@ -13,6 +13,7 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 - 🛍️ Users can purchase and sell their own products
 - 🛒 Locally persisted shopping cart
 - 🔑 Authentication using Payload
+- 🖥️ Learn how to self-host Next.js
 - 🌟 Clean, modern UI using shadcn-ui
 - ✉️ Beautiful emails for signing up and after purchase
 - ✅ Admins can verify products to ensure high quality
