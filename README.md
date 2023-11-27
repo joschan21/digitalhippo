@@ -39,11 +39,18 @@ cp .env.example .env
 ```
 Note:Simply complete the fields in the .env file, and you're all set to begin!
 
-### 4. Run the server
+### 4. Run the build command
 
 ```sh
 npm run build
 ```
+
+### 5. Run the development server
+
+```sh
+npm run start
+```
+
 
 ## Acknowledgements
 
