@@ -22,14 +22,43 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
 ## Getting started
 
-To get started with this project, run
+### 1. Fork and Clone the Repository
 
 ```bash
   git clone https://github.com/joschan21/digitalhippo.git
 ```
 
-and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
+### 2. Change directory
 
+```sh
+cd ./digitalhippo
+```
+
+### 3. Install dependencies
+
+```sh
+npm install
+```
+
+### 4. Copy .env.example to .env
+
+```sh
+cp .env.example .env
+```
+
+Note:Simply complete the fields in the .env file, and you're all set to begin!
+
+### 5. Run the build command
+
+```sh
+npm run build
+```
+
+### 6. Run the development server
+
+```sh
+npm run start
+```
 
 ## Acknowledgements
 
