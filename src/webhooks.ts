@@ -79,7 +79,7 @@ export const stripeWebhookHandler = async (
 
     const [order] = orders
 
-    if (!user)
+    if (!order)
       return res
         .status(404)
         .json({ error: 'No such order exists.' })
