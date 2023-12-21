@@ -15,10 +15,14 @@ export const getServerSideUser = async (
       },
     }
   )
-
-  const { user } = (await meRes.json()) as {
-    user: User | null
+  const responseText = await meRes.text();
+  console.log('API Response:', responseText);
+  
+  try {
+    const { user } = JSON.parse(responseText);
+    return { user };
+  } catch (error) {
+    console.error('Error al analizar la respuesta JSON:', error);
+    return { user: null };
   }
-
-  return { user }
 }
