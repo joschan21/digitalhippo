@@ -17,7 +17,6 @@ export const getServerSideUser = async (
   );
 
   const responseText = await meRes.text();
-  console.log(responseText); // Imprime el contenido de la respuesta
 
   try {
     const { user } = JSON.parse(responseText);
