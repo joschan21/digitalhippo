@@ -14,12 +14,15 @@ export const getServerSideUser = async (
         Authorization: `JWT ${token}`,
       },
     }
-  )
-  const responseText = await meRes.text();
-  console.log('API Response:', responseText);
-  
+  );
+
   try {
-    const { user } = JSON.parse(responseText);
+    const responseText = await meRes.text();
+    console.log('API Response:', responseText);
+
+    const { user } = JSON.parse(responseText) as {
+      user: User | null
+    };
     return { user };
   } catch (error) {
     console.error('Error al analizar la respuesta JSON:', error);
