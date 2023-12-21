@@ -16,6 +16,9 @@ export const getServerSideUser = async (
     }
   )
 
+  const responseText = await meRes.text();
+  console.log(responseText);
+
   const { user } = (await meRes.json()) as {
     user: User | null
   }
