@@ -14,14 +14,13 @@ export const getServerSideUser = async (
         Authorization: `JWT ${token}`,
       },
     }
-  )
+  );
 
   const responseText = await meRes.text();
   console.log(responseText);
 
-  const { user } = (await meRes.json()) as {
-    user: User | null
-  }
+  const { user } = await meRes.json();
+
 
   return { user }
 }
