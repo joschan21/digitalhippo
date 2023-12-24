@@ -11,9 +11,18 @@ import nextBuild from 'next/dist/build'
 import path from 'path'
 import { PayloadRequest } from 'payload/types'
 import { parse } from 'url'
+import cors from 'cors'; 
 
 const app = express()
 const PORT = Number(process.env.PORT) || 3000
+
+// Agrega el middleware cors con opciones específicas
+app.use(cors({
+  origin: process.env.NEXT_PUBLIC_SERVER_URL,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Permite el envío de cookies de origen a destino
+}));
+
 
 const createContext = ({
   req,
