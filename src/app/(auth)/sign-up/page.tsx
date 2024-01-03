@@ -97,6 +97,7 @@ const Page = () => {
                   <Label htmlFor='email'>Email</Label>
                   <Input
                     {...register('email')}
+                    id="email"
                     className={cn({
                       'focus-visible:ring-red-500':
                         errors.email,
@@ -114,6 +115,7 @@ const Page = () => {
                   <Label htmlFor='password'>Password</Label>
                   <Input
                     {...register('password')}
+                    id="password"
                     type='password'
                     className={cn({
                       'focus-visible:ring-red-500':
