@@ -27,6 +27,10 @@ To get started with this project, run
 ```bash
 git clone https://github.com/joschan21/digitalhippo.git
 ```
+```bash
+cd digitalhippo
+```
+
 
 ```bash
 npm i
